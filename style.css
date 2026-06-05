@@ -123,12 +123,10 @@ a { color: inherit; text-decoration: none; }
 
 /* Alt tones for screen 2 */
 .watercolor-bg--alt {
-  background: linear-gradient(
-    135deg,
-    var(--cream) 0%,
-    #f0f7fd 50%,
-    var(--warm-white) 100%
-  );
+  background-image: url("image_c56f7746.png"), linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+  background-blend-mode: overlay; /* Or use 'lighten', 'darken', 'multiply' depending on the look */
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -253,6 +251,13 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.15); /* adjust opacity to taste */
+  z-index: 1;
+}
+
+.bg-overlay-two {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.40); /* adjust opacity to taste */
   z-index: 1;
 }
 
