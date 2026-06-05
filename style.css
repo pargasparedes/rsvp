@@ -157,13 +157,13 @@ a { color: inherit; text-decoration: none; }
 
 .home-eyebrow {
   font-family: var(--font-sans);
-  font-weight: 200;
-  font-size: clamp(1rem, 2vw, 1rem);
-  letter-spacing: 0.25em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: clamp(0.8rem, 1.8vw, 0.8rem);
   text-transform: uppercase;
   color: var(--blue-muted);
   animation: fadeUp 1.2s ease both;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 
 /* The clickable names */
@@ -185,8 +185,6 @@ a { color: inherit; text-decoration: none; }
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-
-.home-names:hover { color: var(--blue-deep); }
 
 .home-names:focus-visible {
   outline: 2px solid var(--blue-soft);
@@ -214,6 +212,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: 2em;
   animation: fadeUp 1.2s ease 0.5s both;
 }
 
@@ -230,7 +229,7 @@ a { color: inherit; text-decoration: none; }
 
 .hint-line {
   display: block;
-  width: 40px;
+  width: 80px;
   height: 1px;
   background: linear-gradient(to right, transparent, var(--blue-mid));
 }
