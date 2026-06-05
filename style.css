@@ -404,7 +404,7 @@ a { color: inherit; text-decoration: none; }
   font-family: "Ballet", cursive;
   font-weight: 100;
   font-style: normal;
-  font-size: clamp(6rem, 12vw, 8rem);
+  font-size: clamp(4rem, 8vw, 6rem);
   color: black;
   margin: 0 0 1rem 0; /* Clear bottom margin to push down the first paragraph */
   line-height: 1.1;
