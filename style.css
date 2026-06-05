@@ -163,13 +163,14 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--blue-muted);
   animation: fadeUp 1.2s ease both;
+  padding-bottom: 2em;
 }
 
 /* The clickable names */
 .home-names {
-  font-family: "Luxurious Script", cursive;
+  font-family: "Ballet", cursive;
   font-weight: 100;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(6rem, 12vw, 8rem);
   line-height: 0.92;
   color: var(--ink-dark);
@@ -203,9 +204,9 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.3em;
   font-style: normal;
   font-weight: 200;
-  color: var(--blue-muted);
+  color: var(--ink-dark);
   text-transform: lowercase;
-  margin: 0.1em 0;
+  margin: 0em 0em 1em 0em;
 }
 
 /* Hover shimmer effect on names */
