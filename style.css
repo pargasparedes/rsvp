@@ -167,10 +167,10 @@ a { color: inherit; text-decoration: none; }
 
 /* The clickable names */
 .home-names {
-  font-family: var(--font-serif);
-  font-weight: 300;
+  font-family: "Luxurious Script", cursive;
+  font-weight: 100;
   font-style: italic;
-  font-size: clamp(4.5rem, 14vw, 10rem);
+  font-size: clamp(6rem, 12vw, 8rem);
   line-height: 0.92;
   color: var(--ink-dark);
   letter-spacing: -0.01em;
