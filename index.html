@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniela Y Alex — Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ SCREEN 1: HOME ═══════════════════════════════ -->
+  <section id="screen-home" class="screen active">
+
+    <!-- Watercolor SVG background layers -->
+    <div class="watercolor-bg" aria-hidden="true">
+      <div class="bg-overlay"></div>
+      <svg class="wave wave-1" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wg1" cx="30%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#c8dff5" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#c8dff5" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="280" cy="350" rx="520" ry="380" fill="url(#wg1)" />
+      </svg>
+
+      <svg class="wave wave-2" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wg2" cx="70%" cy="65%" r="55%">
+            <stop offset="0%" stop-color="#9ec5e8" stop-opacity="0.40"/>
+            <stop offset="100%" stop-color="#9ec5e8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="1100" cy="580" rx="480" ry="360" fill="url(#wg2)" />
+      </svg>
+
+      <svg class="wave wave-3" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wg3" cx="55%" cy="15%" r="45%">
+            <stop offset="0%" stop-color="#b8d4ef" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#b8d4ef" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="780" cy="100" rx="400" ry="300" fill="url(#wg3)" />
+      </svg>
+
+      <!-- Organic flowing shape bottom-left -->
+      <svg class="wave wave-4" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wg4" cx="40%" cy="60%" r="60%">
+            <stop offset="0%" stop-color="#7aafdb" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#7aafdb" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path d="M0,400 Q100,200 250,300 Q400,400 350,500 L0,500Z" fill="url(#wg4)" />
+      </svg>
+
+      <!-- Organic flowing shape top-right -->
+      <svg class="wave wave-5" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="wg5" cx="60%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#d6eaf8" stop-opacity="0.50"/>
+            <stop offset="100%" stop-color="#d6eaf8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path d="M500,0 Q300,50 350,180 Q400,300 500,280Z" fill="url(#wg5)" />
+      </svg>
+    </div>
+
+    <!-- Centered content -->
+    <div class="home-content">
+      <p class="home-eyebrow">Están invitados cordialmente a la boda de</p>
+      <h1 class="home-names" id="enter-btn" role="button" tabindex="0" aria-label="Enter the wedding details">
+        <span class="name-line">Daniela</span>
+        <span class="name-amp">y</span>
+        <span class="name-line">Alex</span>
+      </h1>
+      <p class="home-hint">
+        <span class="hint-line"></span>
+        <span class="hint-text">tap to enter</span>
+        <span class="hint-line"></span>
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════════════════════ SCREEN 2: DETAILS ═══════════════════════════ -->
+  <section id="screen-details" class="screen" aria-hidden="true">
+
+    <!-- Watercolor background for screen 2 -->
+    <div class="watercolor-bg watercolor-bg--alt" aria-hidden="true">
+      <svg class="wave wave-1" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="dg1" cx="80%" cy="20%" r="55%">
+            <stop offset="0%" stop-color="#b3d4ee" stop-opacity="0.40"/>
+            <stop offset="100%" stop-color="#b3d4ee" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="1200" cy="150" rx="500" ry="350" fill="url(#dg1)" />
+      </svg>
+      <svg class="wave wave-2" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="dg2" cx="20%" cy="80%" r="50%">
+            <stop offset="0%" stop-color="#8fbfe0" stop-opacity="0.30"/>
+            <stop offset="100%" stop-color="#8fbfe0" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="200" cy="750" rx="450" ry="300" fill="url(#dg2)" />
+      </svg>
+    </div>
+
+    <!-- Top navigation -->
+    <nav class="details-nav">
+      <button class="back-btn" id="back-btn" aria-label="Back to home">
+        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 5H17M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Home</span>
+      </button>
+      <div class="nav-names">Daniela &amp; Alex</div>
+    </nav>
+
+    <main class="details-main">
+
+      <!-- ─── PHOTO GALLERY ─── -->
+      <section class="section-block" id="gallery">
+        <div class="section-label">Gallery</div>
+        <h2 class="section-title">Our Story</h2>
+        <div class="gallery-grid">
+          <!--
+            TO ADD PHOTOS: Replace the src attribute on each <img> with your image URL.
+            You can also add or remove <div class="gallery-item"> blocks as needed.
+          -->
+          <div class="gallery-item gallery-item--tall">
+            <img src="https://placehold.co/600x800/c8dff5/5a87b0?text=Photo+1" alt="Photo 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://placehold.co/600x500/b3d4ee/5a87b0?text=Photo+2" alt="Photo 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://placehold.co/600x500/9ec5e8/4a7ba0?text=Photo+3" alt="Photo 3" />
+          </div>
+          <div class="gallery-item gallery-item--wide">
+            <img src="https://placehold.co/1200x600/d6eaf8/5a87b0?text=Photo+4" alt="Photo 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://placehold.co/600x500/7aafdb/3a6b90?text=Photo+5" alt="Photo 5" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://placehold.co/600x500/a8cce5/4a7ba0?text=Photo+6" alt="Photo 6" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── WEDDING INFO ─── -->
+      <section class="section-block" id="info">
+        <div class="section-label">Details</div>
+        <h2 class="section-title">Wedding Day</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="info-card-label">Date</div>
+            <!-- ✏️ Replace with your wedding date -->
+            <div class="info-card-value">October 18, 2025</div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="info-card-label">Time</div>
+            <!-- ✏️ Replace with your ceremony time -->
+            <div class="info-card-value">4:00 PM</div>
+          </div>
+          <div class="info-card info-card--full">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="info-card-label">Location</div>
+            <!-- ✏️ Replace with your venue name and address -->
+            <div class="info-card-value">The Grand Ballroom<br/><span class="info-card-sub">123 Garden Lane, City, State</span></div>
+          </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="schedule">
+          <h3 class="schedule-title">Schedule</h3>
+          <div class="schedule-list">
+            <!-- ✏️ Add, remove, or edit schedule items below -->
+            <div class="schedule-item">
+              <div class="schedule-time">3:30 PM</div>
+              <div class="schedule-dot"></div>
+              <div class="schedule-event">Guest Arrival &amp; Welcome Drinks</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">4:00 PM</div>
+              <div class="schedule-dot"></div>
+              <div class="schedule-event">Ceremony</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">5:00 PM</div>
+              <div class="schedule-dot"></div>
+              <div class="schedule-event">Cocktail Hour</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">7:00 PM</div>
+              <div class="schedule-dot"></div>
+              <div class="schedule-event">Dinner &amp; Celebrations</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">9:00 PM</div>
+              <div class="schedule-dot"></div>
+              <div class="schedule-event">Dancing &amp; Late Night</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── RSVP FORM ─── -->
+      <section class="section-block" id="rsvp">
+        <div class="section-label">RSVP</div>
+        <h2 class="section-title">Will You Join Us?</h2>
+        <p class="rsvp-intro">Please respond by <strong>September 1, 2025</strong>. We can't wait to celebrate with you.</p>
+
+        <!--
+          ════════════════════════════════════════════════════════════════
+          FORM SETUP — CHOOSE ONE OPTION:
+
+          OPTION A — Web3Forms (recommended, free, no account needed):
+            1. Go to https://web3forms.com
+            2. Enter your email and click "Create Access Key"
+            3. Copy the key and paste it in the hidden input below
+            4. Change the form action to: https://api.web3forms.com/submit
+
+          OPTION B — Formspree (also free):
+            1. Go to https://formspree.io and sign up
+            2. Create a new form and copy the action URL
+            3. Replace the action below and remove the hidden access_key input
+
+          Current state: form is ready to connect — just add your key/action.
+          ════════════════════════════════════════════════════════════════
+        -->
+        <form
+          id="rsvp-form"
+          class="rsvp-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          novalidate
+        >
+          <!-- ✏️ Web3Forms: paste your access key here -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+          <!-- Optional: customize the subject line in your inbox -->
+          <input type="hidden" name="subject" value="New RSVP — Daniela & Alex" />
+          <input type="hidden" name="redirect" value="" />
+
+          <!-- Guest Name -->
+          <div class="form-group">
+            <label class="form-label" for="guest-name">Full Name(s)</label>
+            <input
+              class="form-input"
+              type="text"
+              id="guest-name"
+              name="guest_name"
+              placeholder="Your name(s)"
+              required
+            />
+          </div>
+
+          <!-- Attendance -->
+          <div class="form-group">
+            <label class="form-label">Attendance</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="Joyfully Attending" required />
+                <span class="radio-custom"></span>
+                <span class="radio-label">Joyfully Attending</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="Regretfully Declining" />
+                <span class="radio-custom"></span>
+                <span class="radio-label">Regretfully Declining</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Number of guests — shown only when attending -->
+          <div class="form-group" id="guest-count-group">
+            <label class="form-label" for="guest-count">Number of Guests</label>
+            <select class="form-input form-select" id="guest-count" name="guest_count">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+            </select>
+          </div>
+
+          <!-- Dietary Restrictions -->
+          <div class="form-group">
+            <label class="form-label" for="dietary">Dietary Restrictions</label>
+            <input
+              class="form-input"
+              type="text"
+              id="dietary"
+              name="dietary"
+              placeholder="Vegetarian, gluten-free, allergies… or none"
+            />
+          </div>
+
+          <!-- Song Request -->
+          <div class="form-group">
+            <label class="form-label" for="song">Song Request</label>
+            <input
+              class="form-input"
+              type="text"
+              id="song"
+              name="song_request"
+              placeholder="What song will get you on the dance floor?"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label class="form-label" for="message">A Note for the Couple <span class="optional">(optional)</span></label>
+            <textarea
+              class="form-input form-textarea"
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="Share your wishes, a memory, or a few words…"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit-wrap">
+            <button class="submit-btn" type="submit">
+              <span class="submit-text">Send RSVP</span>
+              <span class="submit-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Success / Error messages -->
+          <div id="form-success" class="form-feedback form-feedback--success" role="alert" aria-live="polite" hidden>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Thank you! Your RSVP has been received. We look forward to celebrating with you.</span>
+          </div>
+          <div id="form-error" class="form-feedback form-feedback--error" role="alert" aria-live="polite" hidden>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>Something went wrong. Please try again or email us directly.</span>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>With love,</p>
+        <p class="footer-names">Daniela &amp; Alex</p>
+        <p class="footer-date">October 18, 2025</p>
+      </footer>
+
+    </main>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
