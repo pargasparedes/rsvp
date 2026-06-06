@@ -442,6 +442,7 @@ a { color: inherit; text-decoration: none; }
   padding: 3rem 1.5rem;
   border: 1px solid rgba(158,197,232,0.10);
   border-radius: 4px;
+  backdrop-filter: blur(2px); 
 }
 .cd-eyebrow {
   font-family: var(--font-sans); font-weight: 400;
@@ -450,8 +451,11 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 2rem;
 }
 .cd-grid {
-  display: flex; justify-content: center;
-  gap: clamp(0.8rem, 2vw, 1.5rem); margin-bottom: 2rem; flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.4rem, 1.5vw, 1.5rem); /* shrinks gap on small screens */
+  margin-bottom: 2rem;
+  flex-wrap: nowrap; /* ← prevents wrapping */
 }
 .cd-unit { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
 .cd-box {
@@ -478,7 +482,7 @@ a { color: inherit; text-decoration: none; }
 .cd-label {
   font-family: var(--font-sans); font-weight: 200;
   font-size: 0.6rem; letter-spacing: 0.28em;
-  text-transform: uppercase; color: var(--blue-muted);
+  text-transform: uppercase; color: var(--blue-deep);
 }
 .cd-message {
   font-family: var(--font-serif); font-style: italic;
