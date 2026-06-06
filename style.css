@@ -416,18 +416,17 @@ a { color: inherit; text-decoration: none; }
 
 /* Unique styling for the first paragraph */
 .hero-subtitle {
-  font-family: "Imperial Script", cursive;
+  font-family: "Luxurious Script", cursive;
   font-style: normal;
   font-weight: 100;
   color: var(--ink-dark);
   letter-spacing: 0.03em;
   font-size: 2em;
   margin: 0 0 1.5rem 0; /* Pushes down the second paragraph */
-  line-height: 1.5;
   color: black;
   animation: fadeUp 1.2s ease 0.2s both;
   transition: color 0.3s ease;
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(3px); 
 }
 
 /* Unique styling for the second paragraph */
