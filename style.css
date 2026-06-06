@@ -402,7 +402,7 @@ a { color: inherit; text-decoration: none; }
 /* Unique styling for the big headline */
 .hero-title {
   font-family: "Ballet", cursive;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   font-size: clamp(3.5rem, 7vw, 5rem);
   color: black;
@@ -414,10 +414,15 @@ a { color: inherit; text-decoration: none; }
 
 /* Unique styling for the first paragraph */
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-family: "Imperial Script", cursive;
+  font-style: normal;
+  font-weight: 100;
+  color: var(--ink-dark);
+  letter-spacing: 0.03em;
+  font-size: 2em;
   margin: 0 0 1.5rem 0; /* Pushes down the second paragraph */
   line-height: 1.5;
-  font-weight: 400;
+  color: black;
   animation: fadeUp 1.2s ease 0.2s both;
   transition: color 0.3s ease;
 }
