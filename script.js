@@ -15,6 +15,44 @@ const formSuccess   = document.getElementById('form-success');
 const formError     = document.getElementById('form-error');
 const guestCountGrp = document.getElementById('guest-count-group');
 
+// ── Countdown ─────────────────────────────────────────────────
+(function () {
+  const pad = n => String(n).padStart(2, '0');
+  const dEl = document.getElementById('cd-d');
+  const hEl = document.getElementById('cd-h');
+  const mEl = document.getElementById('cd-m');
+  const sEl = document.getElementById('cd-s');
+  if (!dEl) return; // countdown not on page
+
+  // ✏️ Set your wedding date and time here
+  const target = new Date('2026-12-10T16:00:00');
+  let prev = { d: '', h: '', m: '', s: '' };
+
+  function flip(el) {
+    el.classList.add('flip');
+    setTimeout(() => el.classList.remove('flip'), 250);
+  }
+
+  function tick() {
+    const diff = target - new Date();
+    if (diff <= 0) {
+      [dEl, hEl, mEl, sEl].forEach(e => e.textContent = '00');
+      return;
+    }
+    const d = pad(Math.floor(diff / 86400000));
+    const h = pad(Math.floor((diff % 86400000) / 3600000));
+    const m = pad(Math.floor((diff % 3600000) / 60000));
+    const s = pad(Math.floor((diff % 60000) / 1000));
+    if (d !== prev.d) { flip(dEl); dEl.textContent = d; prev.d = d; }
+    if (h !== prev.h) { flip(hEl); hEl.textContent = h; prev.h = h; }
+    if (m !== prev.m) { flip(mEl); mEl.textContent = m; prev.m = m; }
+    if (s !== prev.s) { flip(sEl); sEl.textContent = s; prev.s = s; }
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
 
 /* ═══════════════════════════════════════════════════════════════
    SCREEN TRANSITIONS
@@ -265,3 +303,5 @@ galleryItems.forEach((item) => {
   item.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
   galleryObserver.observe(item);
 });
+
+
